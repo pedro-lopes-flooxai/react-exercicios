@@ -1,13 +1,19 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
 
-import Saudacao from './componentes/Saudacao'
+import Pai from './componentes/Pai';
+import Filho from './componentes/Filho';
 
 const container = document.getElementById('root');
 const root = createRoot(container);
 root.render
 (
     <div>
-        <Saudacao tipo="Bom dia" nome="Bia"/>
+        <Pai nome="Paulo" sobrenome="Silva">
+            <Filho nome="Pedro" />
+            <Filho nome="Paulo" />
+            <Filho nome="Carla" />
+        </Pai>
+
     </div>
 );
