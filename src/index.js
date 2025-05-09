@@ -1,15 +1,13 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
 
-import Multi, {BoaNoite} from './componentes/Multiplos'
+import Saudacao from './componentes/Saudacao'
 
 const container = document.getElementById('root');
 const root = createRoot(container);
 root.render
 (
     <div>
-        <Multi.BoaTarde nome="Bia"/>
-        
-        <BoaNoite nome="Ana"/>
+        <Saudacao tipo="Bom dia" nome="Bia"/>
     </div>
 );
